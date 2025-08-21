@@ -4,12 +4,15 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
+body{
+    background-color: rgb(41, 38, 38);
+    color: white;
+}
 a{
     text-decoration: none;
     color: white;
 }
-.navbar{
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,20 +22,37 @@ a{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    visibility: hidden;
-    opacity: 0;
-    animation:  show-content 1.5s linear forwards;
-    animation-delay: 1.2s;
-}
-@keyframes show-content{
-    100%{
-        visibility: visible;
-        opacity: 1;
-    }
+    visibility: visible;
+    opacity: 1;
+    background-color: rgb(46, 44, 44);
 }
 .navbar .logo{
     font-weight: 700;
     font-size: 30px;
+    color: rgb(44, 205, 16);
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .navbar ul{
     display: flex;
@@ -44,7 +64,10 @@ a{
 .navbar ul li a{
     font-size: 20px;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 .navbar ul li a:hover,
 .navbar ul li a.active{
@@ -57,20 +80,22 @@ a{
     gap: 50px;
     padding: 60px 9% 0;
     color: white;
-    visibility: hidden;
-    opacity: 0;
-    animation:  show-content 1.5s linear forwards;
-    animation-delay: 1.8s;
 }
 .home-content h1{
     font-size: 55px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 }
 .home-content h2{
     display: inline-block;
     font-size: 32px;
     margin: 15px 0;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
-.home-content h2 span{
+/*.home-content h2 span{
     position: relative;
     display: inline-block;
     color: transparent;
@@ -83,6 +108,14 @@ a{
     100%{
         display: none;
     }
+}*/
+.home-content h2 span:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+.home-content h2 span{
+    color: rgb(44, 205, 16);
 }
 .home-content h2 span::before{
     content: attr(data-text);
@@ -107,6 +140,9 @@ a{
 .home-content p{
     margin: 30px 0 25px;
     font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
 }
 .home-content .btn-sci{
     display: flex;
@@ -123,11 +159,14 @@ a{
     font-weight: 600;
     color: rgb(20, 20, 20);
     transform: .5s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1.5s;
 }
 .btn:hover{
     background-color: transparent;
     color: rgb(44, 205, 16);
-    box-shadow: none;
+    box-shadow: 0 0 5px rgb(57, 201, 32), 0 0 25px rgb(57, 201, 32);
 }
 .home-content .btn-sci .sci{
     margin-left: 20px;
@@ -140,6 +179,10 @@ a{
     font-size: 20px;
     color: rgb(44, 205, 16);
     margin: 0 8px;
+    transition: .5s;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 .home-content .btn-sci .sci a:hover{
     background-color: rgb(44, 205, 16);
@@ -195,25 +238,124 @@ a{
     mix-blend-mode: lighten;
     background-color: rgb(41, 38, 38);
 }
-.bars-animation{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    z-index: -1;
-}
 
-.bars-animation .bar{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(41, 38, 38);
-    transform: translateY(-100%);
-    animation: show-bars .5s ease-in-out forwards;
-    animation-delay: calc(.1s * var(--i));
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
 }
-
-@keyframes show-bars{
+.about-img img{
+    padding: 20%;
+    max-width: 630px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: rgb(44, 205, 16);
+}
+.about-text h4{
+    font-size: 20px;
+    margin: 15px 0 30px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: seashell;
+}
+.about-text p{
+    font-size: 20px;
+    line-height: 1.7;
+    color: seashell;
+    margin-bottom: 4rem;
+}
+.more{
+    color: royalblue;
+    text-decoration: none;
+}
+#services{
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: rgb(44, 205, 16);
+}
+.container{
+    padding: 90px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(35, 169, 81, 0.855);
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: rgb(9, 6, 85);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: rgb(44, 205, 16);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(20, 20, 20);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 10px rgb(57, 201, 32), 0 0 25px rgb(57, 201, 32);
+}
+@keyframes slideTop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
     100%{
-        transform: translateY(0%);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }

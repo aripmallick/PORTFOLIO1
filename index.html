@@ -6,27 +6,21 @@
     <title> My Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="">
+    <script src="https://unpkg.com/typed.js@2.0.12"></script>
 </head>
 <body>
     <nav class="navbar">
         <a href="#" class="logo">Portfolio.</a>
         <ul>
-            <li  class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li  class="active" style="--i:1" class="active"><a href="#home">Home</a></li>
+            <li><a href="#about" style="--i:2">About</a></li>
+            <li><a href="#services" style="--i:3">Services</a></li>
+            <li><a href="#skills" style="--i:4">Skills</a></li>
+            <li><a href="#certificate" style="--i:5">Certificate</a></li>
+            <li><a href="#contact" style="--i:6">Contact</a></li>
         </ul>
      </nav>
-     <div class="bars-animation">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5"></div>
-        <div class="bar" style="--i:4"></div>
-        <div class="bar" style="--i:3"></div>
-        <div class="bar" style="--i:2"></div>
-        <div class="bar" style="--i:1"></div>
-     </div>
-     <section class="home">
+     <section class="home" id="home">
         <div class="home-content">
             <h1>Arip Mallick</h1>
             <h2>I'm a <span class="text"></span>
@@ -41,11 +35,11 @@
             <div class="btn-sci">
                 <a href="#" class="btn">Download CV</a>
                 <div class="sci">
-                    <a href="https://github.com/aripmallick"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/arip-mallick-7792a8345/"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://www.instagram.com/_.paradox.arip.05/"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.facebook.com/paradox.arip.05"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.youtube.com/@opgamer65665"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://github.com/aripmallick" style="--i:7"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/arip-mallick-7792a8345/" style="--i:8"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.instagram.com/_.paradox.arip.05/" style="--i:9"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/paradox.arip.05" style="--i:10"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.youtube.com/@opgamer65665" style="--i:11"><i class='bx bxl-youtube' ></i></a>
                 </div>
             </div>
         </div>
@@ -58,5 +52,46 @@
         </div>
      </section>
     <script src="main.js"></script>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="home.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h4>Frontend Devloper</h4>
+            <p>Hi, I’m Arip Mallick, a passionate and curious learner who loves building creative and functional digital experiences. I enjoy working on projects that combine design and technology to solve real-world problems. My skills include HTML, CSS, JavaScript, and I’m always exploring new tools and frameworks to improve my craft.</p>
+            <p>When I’m not coding, I’m either learning new tech concepts, experimenting with designs, or exploring innovative ideas. I believe in continuous growth, teamwork, and the power of creativity to make a positive impact.
+                <a href="#" class="read">Learn more</a>
+            </p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-crop' style='color:#25c323' ></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive and engaging user interfaces with a focus on user experience. My goal is to make products not only look great but also provide seamless navigation.
+                        <a href="#" class="read">Learn more</a>
+                    </p>
+                </div>
+                <div>
+                    <i class='bx bx-code' style='color:#25c323'  ></i>
+                    <h2>Web Design</h2>
+                    <p>I create responsive and modern websites that are fast, user-friendly, and optimized for all devices. From portfolio sites to business websites, I deliver clean and professional designs.
+                        <a href="#" class="read">Learn more</a>
+                    </p>
+                </div>
+                <div>
+                    <i class='bx bxl-android' style='color:#25c323' >/</i><i class='bx bxl-apple' style='color: #25c323'  ></i>
+                    <h2>App Design</h2>
+                    <p>I design mobile applications that are visually appealing and easy to use. My designs ensure smooth functionality and engaging user interaction on both Android & iOS.
+                        <a href="#" class="read">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
