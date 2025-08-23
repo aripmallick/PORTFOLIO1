@@ -12,6 +12,10 @@ a{
     text-decoration: none;
     color: white;
 }
+
+/*-----------------------Navbar-----------------------*/
+
+
 .navbar {
     position: fixed;
     top: 0;
@@ -73,6 +77,10 @@ a{
 .navbar ul li a.active{
     color: rgb(44, 205, 16);
 }
+
+/*-------------------------Home-----------------------*/
+
+
 .home{
     height: 100vh;
     display: flex;
@@ -239,6 +247,10 @@ a{
     background-color: rgb(41, 38, 38);
 }
 
+
+/*---------------About----------------------*/
+
+
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -275,6 +287,10 @@ a{
     color: royalblue;
     text-decoration: none;
 }
+
+/*-----------------Services------------------*/
+
+
 #services{
     color: white;
     font-size: 20px;
@@ -365,6 +381,10 @@ a{
         transform: translateY(0);
     }
 }
+
+/*----------------------Skills------------------------*/
+
+
 .section{
     display: flex;
     flex-wrap: wrap;
@@ -390,6 +410,8 @@ a{
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
+    /*----------Technical skills-----------*/
+
 .bar{
     font-size: 23px;
 }
@@ -450,6 +472,7 @@ a{
     opacity: 1;
    
 }
+
 .progress-line.html span{
     width: 80%;
 }
@@ -500,6 +523,8 @@ a{
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0;
 }
+     /*---------Professional skills--------------*/
+
 .radial-bars{
     width: 100%;
     display: flex;
@@ -589,6 +614,122 @@ a{
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
+
+/* ----------------------Certificate-------------------------- */
+#portfolio {
+  padding: 50px 0;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+/* .work:hover .layer {
+  height: 100%;
+} */
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  padding: 14px 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+}
+
+
+/* ----------------------work-------------------------- */
+
+#work {
+  padding: 1px 0;
+}
+.work-list1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work1 {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work1 img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer1 {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(224, 11, 213, 0.826), #00f7ffcb);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer1 h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer1 a {
+  margin-top: 20px;
+  color: #00ff37;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work1:hover img {
+  transform: scale(1.1);
+}
+.work1:hover .layer1 {
+  height: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px){
+  #work {
+  padding: 1px 0;
+}
+}
+
+
+/* ----------------------contact-------------------------- */
+
+
 section .contact{
     float: left;
 }
@@ -702,6 +843,10 @@ section .contact{
     color: rgb(44, 205, 16);
     box-shadow: 0 0 5px rgb(57, 201, 32), 0 0 25px rgb(57, 201, 32);
 }
+
+/*---------------footer----------------*/
+
+
 .last-text p{
     width: 100%;
     text-align: center;
@@ -723,4 +868,222 @@ section .contact{
     padding: 10px;
     border-radius: 0.5rem;
     font-size: 20px;
+}
+.last-text p i{
+    font-size: 25px;
+}
+
+/*--------------Bar----------------*/
+
+nav .bx {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .bx {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #494748;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 150px;
+    height: 370px;
+    padding-top: 30px;
+    z-index: 2;
+    transition: right 0.3s;
+    border-radius: 10px;
+  }
+  nav ul li {
+    display: block;
+    margin: 30px;
+    /* text-align: center; */
+  }
+  nav ul .bx{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .navbar ul{
+    display: inline-block;
+  }
+}
+
+
+
+
+/*--------------Mobile view------------------*/
+/* ================= Mobile Responsive ================= */
+@media only screen and (max-width: 600px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  nav .bx {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 180px;
+    height: 100vh;
+    background: #494748;
+    padding-top: 50px;
+    transition: right 0.4s ease;
+    border-radius: 10px 0 0 10px;
+    text-align: left;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .bx {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 5% 0;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-content h2 {
+    font-size: 22px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .home-img .img-box {
+    width: 65vw;
+    height: 65vw;
+    margin: 20px auto;
+  }
+
+  /* About */
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 5%;
+  }
+
+  .about-img img {
+    padding: 10%;
+    max-width: 80%;
+  }
+
+  .about-text h2 {
+    font-size: 35px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  /* Services */
+  .sub-title {
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  /* Skills */
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container1 {
+    width: 90%;
+    margin: 0;
+    padding: 30px 15px;
+  }
+
+  .heading1 {
+    font-size: 28px;
+  }
+
+  /* Certificates & Work */
+  .work-list,
+  .work-list1 {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    margin-top: 30px;
+  }
+
+  /* Contact */
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .contact-text h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .contact-text p {
+    font-size: 16px;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+  }
+
+  .contact-form form .send {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .last-text p {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+
+  .top {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .top i {
+    font-size: 16px;
+    padding: 8px;
+  }
 }
