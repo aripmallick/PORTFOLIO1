@@ -20,11 +20,18 @@
             <li><a href="#skills" style="--i:4">Skills</a></li>
             <li><a href="#certificate" style="--i:5">Certificate</a></li>
             <li><a href="#contact" style="--i:6">Contact</a></li>
-            <i class='bx bx-x' style='color:#cc321b' onclick="closemenu()"></i>
+            <i id="cross" class='bx bx-x' style='color:#cc321b' onclick="closemenu()"></i>
         </ul>
         <i class='bx bx-list-ul'  onclick="openmenu()" ></i>
      </nav>
      <section class="home" id="home">
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="home.jpg" alt="">
+                </div>
+            </div>
+        </div>
         <div class="home-content">
             <h1>Arip Mallick</h1>
             <h2>I'm a <span class="text"></span>
@@ -47,28 +54,25 @@
                 </div>
             </div>
         </div>
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="home.jpg" alt="">
-                </div>
-            </div>
-        </div>
+        
      </section>
    
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="home.jpg" alt="">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Frontend Devloper</h4>
-            <p>Hi, I’m Arip Mallick, a passionate and curious learner who loves building creative and functional digital experiences. I enjoy working on projects that combine design and technology to solve real-world problems. My skills include HTML, CSS, JavaScript, and I’m always exploring new tools and frameworks to improve my craft.</p>
-            <p>When I’m not coding, I’m either learning new tech concepts, experimenting with designs, or exploring innovative ideas. I believe in continuous growth, teamwork, and the power of creativity to make a positive impact.
-                <a href="#" class="read">Learn more</a>
-            </p>
-        </div>
+            <div class="about-img">
+                <img src="home2.jpeg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h4>Frontend Devloper</h4>
+                <p>Hi, I’m Arip Mallick, a passionate and curious learner who loves building creative and functional digital experiences. I enjoy working on projects that combine design and technology to solve real-world problems. My skills include HTML, CSS, JavaScript, and I’m always exploring new tools and frameworks to improve my craft.</p>
+                <p>When I’m not coding, I’m either learning new tech concepts, experimenting with designs, or exploring innovative ideas. I believe in continuous growth, teamwork, and the power of creativity to make a positive impact.
+                    <a href="#" class="read">Learn more</a>
+                </p>
+            </div>
     </section>
+
+
+    <!--------------Services----------------------->
     <section class="services" id="services">
         <div class="container">
             <h1 class="sub-title">My <span>Services</span></h1>
@@ -246,11 +250,11 @@
         </div>
         <div class="contact-form">
             <form action="https://formspree.io/f/mzzappgo" method="post">
-                    <input type="text" placeholder="Enter your name" required>
-                    <input type="email" placeholder="Enter your email" required>
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
     
-                    <input type="text" placeholder="Enter your subject" required>
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
+                    <input type="text" name="Subject" placeholder="Enter your subject" required>
+                    <textarea name="Message" id="" cols="40" rows="10" placeholder="Enter your message" required></textarea>
                     <input type="submit" value="Send Message" class="send">
                 </div>
             </form>

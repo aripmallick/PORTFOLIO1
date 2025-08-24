@@ -199,6 +199,7 @@ a{
 }
 .home-img .img-box{
     position: relative;
+    left: 0;
     width: 32vw;
     height: 32vw;
     border-radius: 50%;
@@ -257,11 +258,14 @@ a{
     align-items: center;
     gap: 1rem;
 }
+.about-details{
+    float: left;
+}
 .about-img img{
     padding: 20%;
     max-width: 630px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50%;
     
 }
 .about-text h2{
@@ -890,8 +894,8 @@ nav .bx {
     top: 0;
     right: -200px;
     width: 150px;
-    height: 370px;
-    padding-top: 30px;
+    height: 430px;
+    padding-top: 50px;
     z-index: 2;
     transition: right 0.3s;
     border-radius: 10px;
@@ -909,6 +913,10 @@ nav .bx {
   }
   .navbar ul{
     display: inline-block;
+    height: 370px;
+  }
+  #cross{
+    font-size: 50px;
   }
 }
 
@@ -916,7 +924,8 @@ nav .bx {
 
 
 /*--------------Mobile view------------------*/
-/* ================= Mobile Responsive ================= */
+
+
 @media only screen and (max-width: 600px) {
 
   /* Navbar */
@@ -992,7 +1001,7 @@ nav .bx {
   }
 
   .about-img img {
-    padding: 10%;
+    padding-top: 60%;
     max-width: 80%;
   }
 

@@ -46,9 +46,11 @@ h1{
 }
 .work img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
+  
 }
 
 .layer {
