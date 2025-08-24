@@ -7,6 +7,7 @@
 body{
     background-color: rgb(41, 38, 38);
     color: white;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
@@ -262,12 +263,24 @@ a{
     float: left;
 }
 .about-img img{
-    padding: 20%;
-    max-width: 630px;
-    height: auto;
+    padding: 10%;
+    width: 70%;
     border-radius: 50%;
-    
+    filter: drop-shadow(1px 1px 20px rgb(31, 196, 50));
+    animation: zoomPic 1.5s linear forwards;
 }
+@keyframes zoomPic{
+    0%{
+        opacity: 0;
+        transform: translateZ(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+
 .about-text h2{
     font-size: 60px;
 }
@@ -552,7 +565,7 @@ a{
 }
 .radial-bars .radial-bar .progress-bar{
     stroke-width: 10;
-    stop-color: rgb(211, 44, 15);
+    stroke: rgb(70, 72, 72);
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -566,7 +579,7 @@ a{
 }
 .path{
     stroke-width: 10;
-    stroke: rgb(44, 205, 16);
+    stroke: rgb(17, 224, 27);
     fill: transparent;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -1029,11 +1042,10 @@ nav .bx {
   }
 
   /* Skills */
-  .section {
-    flex-direction: column;
-    align-items: center;
+  
+  .main-container{
+    display: inline-block;
   }
-
   .container1 {
     width: 90%;
     margin: 0;
