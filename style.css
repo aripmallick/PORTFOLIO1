@@ -1016,6 +1016,7 @@ nav .bx {
   .about-img img {
     padding-top: 60%;
     max-width: 80%;
+    filter: drop-shadow(1px 1px 20px rgb(31, 196, 50));
   }
 
   .about-text h2 {
