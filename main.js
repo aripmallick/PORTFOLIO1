@@ -5,3 +5,11 @@ var typed=new Typed(".text",{
     backDelay: 1000,
     loop: true
 });
+
+
+function toggleMode() {
+    // Optionally set a default mode here if needed
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+
+}
