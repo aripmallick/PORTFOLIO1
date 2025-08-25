@@ -656,9 +656,6 @@ a{
 .work:hover img {
   transform: scale(1.1);
 }
-/* .work:hover .layer {
-  height: 100%;
-} */
 .btn {
   display: block;
   margin: 50px auto;
