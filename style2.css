@@ -93,6 +93,9 @@ h1{
 .work:hover .layer {
   height: 100%;
 }
+.baby{
+  height: 50%;
+}
 
 @media only screen and (max-width: 600px){
   #portfolio {

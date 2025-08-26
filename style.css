@@ -96,6 +96,12 @@ body.dark{
     width: 30px;
     height: 30px;
     font-size: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: cyan;
 }
 
 /*-------------------------Home-----------------------*/
@@ -640,7 +646,7 @@ body.dark{
     transform: translate(-50%, -50%);
     font-size: 20px;
     font-weight: 600;
-    animation: showText 0.5s 1s linear forwards
+    animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
 .radial-bar .text{
@@ -692,14 +698,14 @@ body.dark{
 }
 
 
-/* ----------------------work-------------------------- */
+/* ----------------------Projects-------------------------- */
 
 #work {
   padding: 1px 0;
 }
 .work-list1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -707,6 +713,8 @@ body.dark{
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  
+
 }
 .work1 img {
   width: 100%;
@@ -733,9 +741,11 @@ body.dark{
   font-size: 14px;
   transition: height 0.5s;
 }
+
 .layer1 h3 {
   font-weight: 500;
   margin-bottom: 20px;
+  color: #fff;
 }
 .layer1 a {
   margin-top: 20px;
@@ -755,6 +765,11 @@ body.dark{
 .work1:hover .layer1 {
   height: 100%;
 }
+
+.layer{
+    height: 50%;
+}
+
 
 
 
@@ -965,7 +980,7 @@ nav .bx {
 
   /* Navbar */
   .navbar {
-    padding: 15px 5%;
+    padding: 10px 5%;
   }
 
   nav .bx {
@@ -995,7 +1010,7 @@ nav .bx {
     position: fixed;
     top: 0;
     right: -200px;
-    width: 180px;
+    width: 150px;
     height: 100vh;
     background: #494748;
     padding-top: 50px;
@@ -1006,7 +1021,7 @@ nav .bx {
 
   nav ul li {
     display: block;
-    margin: 25px;
+    margin: 20px;
   }
 
   nav ul .bx {
