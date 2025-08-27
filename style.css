@@ -19,6 +19,7 @@ body.dark{
     color: white;
 }
 
+
 /*-----------------------Navbar-----------------------*/
 
 
@@ -536,7 +537,7 @@ button:hover{
     position: absolute;
     padding: 1px 8 px;
     border-color: rgb(86, 78, 78);
-    color: white;
+    color: rgb(34, 195, 56);
     font-size: 12px;
     border-radius: 3px;
     top: -28px;
@@ -648,6 +649,7 @@ button:hover{
     font-weight: 600;
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
+    color: #1eca29;
 }
 .radial-bar .text{
     width: 100%;
@@ -700,7 +702,7 @@ button:hover{
 
 /* ----------------------Projects-------------------------- */
 
-#work {
+#projects {
   padding: 1px 0;
 }
 .work-list1 {
