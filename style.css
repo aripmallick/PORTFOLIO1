@@ -40,13 +40,28 @@ body.dark{
     opacity: 1;
     background-color: rgb(46, 44, 44);
 }
-.navbar .logo{
+/*.navbar .logo{
     font-weight: 700;
     font-size: 30px;
     color: rgb(44, 205, 16);
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
+}*/
+.logo{
+    font-size: 2.5rem;
+    color: #fff;
+    background: url(images/Background.jpg) center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: dil 10s linear infinite;
+}
+
+@keyframes dil{
+    to{
+        background-position-x: -200px;
+    }
 }
 @keyframes slideRight{
     0%{
@@ -119,6 +134,35 @@ button:hover{
     padding: 60px 9% 0;
     /*color: white; */
 }
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 20px 20px 1000px rgb(48, 202, 34);
+  animation: slider 10s linear infinite alternate-reverse;
+  color: white;
+}
+@keyframes slider {
+  0% {
+    background-image: url(images/bgc2.jpg);
+  }
+  25% {
+    background-image: url(images/bgc4.jpg);
+  }
+  50% {
+    background-image: url(images/bgc1.jpg);
+  }
+  75% {
+    background-image: url(images/bgc5.jpg);
+  }
+  100% {
+    background-image: url(images/bgc3.jpg);
+  }
+}
+
 .home-content h1{
     font-size: 55px;
     opacity: 0;
@@ -810,7 +854,7 @@ section .contact{
     animation-delay: .5s;
 }
 .contact-form{
-     opacity: 0;
+    opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: .5s;
 }
@@ -920,11 +964,18 @@ section .contact{
     margin-top: 70px;
     color: white;
 }
+.last-text{
+    position: absolute;
+    width: 100%;
+}
 .top{
-    position: fixed;
+    position: relative;
     z-index: 1000;
-    bottom: 2.1rem;
-    right: 2.1rem;
+    /*bottom: 2.1rem;
+    right: 2.1rem;*/
+    bottom: -90px;
+    left: 1430px;
+
 }
 .top i{
     color: rgb(0, 0, 0);
@@ -1048,7 +1099,10 @@ nav .bx {
   .home {
     flex-direction: column;
     text-align: center;
-    padding: 100px 5% 0;
+    
+    background: none;
+    width: 100%;
+    padding-bottom: 1000px;
   }
 
   .home-content h1 {
@@ -1073,8 +1127,8 @@ nav .bx {
   .about {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 150px 5%;
     padding-bottom: -0px;
+    padding-top: -10px;
   }
 
   .about-img img {
@@ -1177,3 +1231,5 @@ nav .bx {
     padding: 8px;
   }
 }
+
+
