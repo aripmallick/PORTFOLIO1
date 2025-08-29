@@ -327,6 +327,33 @@ button:hover{
 }
 
 
+.btn-bt {
+  background-color: #38dc1b;   /* Blue background */
+  color: white;               /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: blink 1s infinite;  /* Apply blinking animation */
+
+}
+
+/* Blinking effect */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.btn-bt:hover {
+    background-color: transparent;
+    color: rgb(44, 205, 16);
+    box-shadow: 0 0 5px rgb(57, 201, 32), 0 0 25px rgb(57, 201, 32);
+}
+
+
 /*---------------About----------------------*/
 
 
@@ -1121,6 +1148,10 @@ nav .bx {
     width: 65vw;
     height: 65vw;
     margin: 20px auto;
+  }
+  .btn-bt{
+    width: 100%;
+    font-size: 14px;
   }
 
   /* About */
