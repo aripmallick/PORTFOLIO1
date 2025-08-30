@@ -1073,6 +1073,9 @@ nav .bx {
     padding: 10px 5%;
   }
 
+  .logo{
+    font-size: 30px;
+  }
   nav .bx {
     display: block;
     font-size: 28px;
