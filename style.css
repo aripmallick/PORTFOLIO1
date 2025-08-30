@@ -63,6 +63,8 @@ body.dark{
         background-position-x: -200px;
     }
 }
+
+
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
