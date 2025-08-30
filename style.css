@@ -40,15 +40,15 @@ body.dark{
     opacity: 1;
     background-color: rgb(46, 44, 44);
 }
-/*.navbar .logo{
+.navbar .logo{
     font-weight: 700;
     font-size: 30px;
     color: rgb(44, 205, 16);
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-}*/
-.logo{
+}
+/*.logo{
     font-size: 2.5rem;
     font-weight: 700px;
     color: #fff;
@@ -63,7 +63,7 @@ body.dark{
     to{
         background-position-x: -200px;
     }
-}
+}*/
 
 
 @keyframes slideRight{
