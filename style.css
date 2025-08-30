@@ -1072,13 +1072,14 @@ nav .bx {
   /* Navbar */
   .navbar {
     padding: 10px 5%;
+    width: 50%;
 
   }
-
-  .navbar .logo{
+  .logo{
     font-size: 30px;
-    font-weight: 400px;
   }
+
+  
   nav .bx {
     display: block;
     font-size: 28px;
@@ -1137,7 +1138,7 @@ nav .bx {
     
     background: none;
     width: 100%;
-    padding-bottom: 1000px;
+    padding-bottom: 800px;
   }
 
   .home-content h1 {
