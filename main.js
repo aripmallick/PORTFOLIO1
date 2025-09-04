@@ -7,10 +7,10 @@ var typed=new Typed(".text",{
 });
 
 
-function toggleMode() {
+//function toggleMode() {
     // Optionally set a default mode here if needed
-    document.body.classList.toggle("dark");
-    document.body.classList.toggle("light");
+    //document.body.classList.toggle("dark");
+    //document.body.classList.toggle("light");
 
-}
+//}
 

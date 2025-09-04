@@ -8,6 +8,7 @@ body{
    
     color: rgb(51, 48, 48);
     scroll-behavior: smooth;
+    background-color: rgb(28, 26, 26);
 }
 html{
     scroll-behavior: smooth;
@@ -17,10 +18,6 @@ a{
     color: white;
 }
 
-body.dark{
-    background-color:  rgb(41, 38, 38);
-    color: white;
-}
 
 
 /*-----------------------Navbar-----------------------*/
@@ -145,7 +142,7 @@ button:hover{
   background-size: cover;
   background-position: center;
   box-shadow: 20px 20px 1000px rgb(48, 202, 34);
-  animation: slider 10s linear infinite alternate-reverse;
+  animation: slider 5s linear infinite alternate-reverse;
   color: white;
 }
 @keyframes slider {
@@ -366,6 +363,7 @@ button:hover{
     align-items: center;
     gap: 1rem;
     padding-top: 50px;
+    color: white;
 }
 .about-details{
     float: left;
@@ -417,7 +415,7 @@ button:hover{
 
 
 #services{
-    /*color: white; */
+    color: white;  /*---------Service section text color-------*/
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -426,6 +424,7 @@ button:hover{
     text-align: center;
     font-size: 60px;
     padding-bottom: -0px;
+    color: white; /*----------------All header text color-----------------*/
 
 }
 .sub-title span{
@@ -518,6 +517,8 @@ button:hover{
 }
 #skills .sub-title{
     padding-top: 100px;
+    color: white;
+
 }
 .container1{
     width: 600px;
@@ -532,6 +533,7 @@ button:hover{
     border-radius: 10px;
     padding: 30px;
     display: flex;
+    color: white; /*---------Skill section text color-------*/
 }
 .heading1{
     text-align: center;
@@ -871,6 +873,7 @@ section .contact{
     float: left;
 }
 .contact{
+    color: white;    /*---------Contact section text color-------*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -1069,6 +1072,12 @@ nav .bx {
 
 @media only screen and (max-width: 700px) {
 
+    body.dark{
+    background-color:  rgb(232, 224, 224);
+    color: rgb(26, 25, 25);
+}
+
+
   /* Navbar */
   .navbar {
     padding: 10px 5%;
@@ -1086,7 +1095,9 @@ nav .bx {
     color: white;
   }
 
-  .navbar button{
+ 
+
+  /*.navbar button{
     width: 0;
     height: 0;
     background: none;
@@ -1101,7 +1112,7 @@ nav .bx {
   .dark-light{
     margin-left: 130px;
     margin-top: 5px;
-  }
+  }*/
   nav ul {
     position: fixed;
     top: 0;
@@ -1168,6 +1179,7 @@ nav .bx {
     padding-bottom: -0px;
     padding-top: 0px;
     margin-top: -100px;
+    
   }
 
   .about-img img {
