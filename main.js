@@ -14,3 +14,8 @@ var typed=new Typed(".text",{
 
 //}
 
+let toggle=document.querySelector('.toggle');
+let lis=document.querySelector('.lis');
+toggle.onclick=function(){
+    lis.classList.toggle('active')
+}

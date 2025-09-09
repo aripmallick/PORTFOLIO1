@@ -251,9 +251,9 @@ button:hover{
     box-shadow: 0 0 5px rgb(57, 201, 32), 0 0 25px rgb(57, 201, 32);
 }
 .home-content .btn-sci .sci{
-    margin-left: 20px;
+    margin-left: 200px;
 }
-.home-content .btn-sci .sci a{
+/*.home-content .btn-sci .sci .lis a{
     display: inline-flex;
     padding: 8px;
     border: 2px solid rgb(44, 205, 16);
@@ -265,7 +265,7 @@ button:hover{
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
-}
+}*/
 .home-content .btn-sci .sci a:hover{
     background-color: rgb(44, 205, 16);
     color: white;
@@ -1284,3 +1284,144 @@ nav .bx {
 }
 
 
+
+
+
+/*---------------------CONTACT Button----------------------*/
+
+.lis{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lis .toggle{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background: #1d1f1d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #29d626;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1.25s;
+    z-index: 0;
+    border: 2px solid rgb(41, 221, 41);
+}
+.lis .toggle:hover{
+    background-color: rgb(44, 205, 16);
+    color: rgb(6, 0, 0);
+    box-shadow: 0 0 20px rgb(57, 201, 32);
+}
+.lis.active .toggle{
+    transform: rotate(360deg);
+    box-shadow: 
+    0 6px 8px rgba(0,0,0,0.15),
+    0 0 0 2px #333,
+    0 0 0 8px #fff;
+   
+
+}
+.lis li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transition: .5s;
+    transform: rotate(calc(360deg/6 * var(--i)));
+    transform-origin: 100px;
+    scale: 0;
+    
+}
+.lis.active li{
+    scale: 1;
+}
+.lis li a{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    transform: rotate(calc(360deg/-6 * var(--i)));
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.75rem;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    transition: 0.5s;
+
+}
+.sci .lis li:hover a{
+    font-size: 2.5rem;
+    box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
+    color: #fff;
+}
+
+
+
+/* Mobile view adjustments for  contact button */
+
+
+
+@media (max-width: 600px) {
+    .home-content .btn-sci .sci{
+        margin-left: 40px;
+    }
+    
+    .lis {
+        width: 200px;
+        height: 200px;
+    }
+
+    .lis .toggle {
+        height: 35px;
+        width: 35px;
+        font-size: 1.5rem;
+    }
+
+    .lis li {
+        transform-origin: 100px; /* shrink circle radius */
+    }
+
+    .lis li a {
+        width: 35px;
+        height: 35px;
+        font-size: 1.25rem;
+    }
+
+    .sci .lis li:hover a {
+        font-size: 1.75rem;
+        box-shadow: 0 0 0 2px var(--clr), 0 0 0 5px #fff;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+    .home-content .btn-sci .sci{
+        margin-left: 30px;
+    }
+    .lis {
+        width: 160px;
+        height: 160px;
+    }
+
+    .lis .toggle {
+        height: 30px;
+        width: 30px;
+        font-size: 1.2rem;
+    }
+
+    .lis li {
+        transform-origin: 80px; /* smaller radius */
+    }
+
+    .lis li a {
+        width: 30px;
+    }
+}
